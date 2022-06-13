@@ -49,7 +49,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'ServiceToApp'
+    azureSubscription: 'ServiceApp'
     appType: 'webApp'
     WebAppName: 'testststtstststs'
     packageForLinux: '$(System.ArtifactsDirectory)/drop/*.zip'
